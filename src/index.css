@@ -158,3 +158,18 @@ code {
         transform: translateX(-100%);
     }
 }
+
+.slow-shift {
+    animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(10px);
+    animation-timing-function: ease-in-out;
+  }
+}

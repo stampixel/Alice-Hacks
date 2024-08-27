@@ -33,6 +33,9 @@ module.exports = {
             fontFamily: {
                 'satoshi': ['Satoshi']
             },
+            animation: {
+                'slow-bounce': 'bounce 4s linear infinite',
+            }
         },
     },
     plugins: [],
