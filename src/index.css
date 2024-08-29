@@ -18,6 +18,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -160,16 +164,16 @@ code {
 }
 
 .slow-shift {
-    animation: bounce 4s ease-in-out infinite;
+    animation: bounce 3s ease-in-out infinite;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(-10px);
+    transform: translateY(-4px);
     animation-timing-function: ease-in-out;
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(4px);
     animation-timing-function: ease-in-out;
   }
 }

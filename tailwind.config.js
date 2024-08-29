@@ -4,7 +4,8 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        colors: {
+        extend: {
+            colors: {
             black: '#1d1d1d',
             dark_grey: '#33383f',
             light_grey: '#99a4af',
@@ -29,7 +30,6 @@ module.exports = {
             lavender_blush_2: '#b9b9d1',
             rosy: '#b99898'
         },
-        extend: {
             fontFamily: {
                 'satoshi': ['Satoshi']
             },
