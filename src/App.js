@@ -89,7 +89,7 @@ function App() {
                 </div>
             </section>
 
-            <section id={"ourSponsors"} className={"h-full"}>
+            <section id={"ourSponsors"} className={"h-full mb-36"}>
                 <div>
                     <h3 className={"text-3xl font-black pt-12 pb-6"}>Our Sponsors</h3>
                 </div>
@@ -170,7 +170,9 @@ function App() {
                         </a>
                     </div>
                 </div>
+            </section>
 
+            <section id={"footer"} className={"h-64 border-t-black border-t-4 bg-white"}>
 
             </section>
 
