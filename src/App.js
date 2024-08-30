@@ -7,7 +7,7 @@ function App() {
             <section id={"home"}>
                 <div className={"h-lvh flex"}>
                     <div className={"m-auto flex flex-col gap-y-3"}>
-                        <h1 className={"font-black text-8xl"}>Alice</h1>
+                        <h1 className={"font-black text-8xl text-misty_rose_2"}>Alice</h1>
                         <h2 className={"font-black text-8xl"}>Hacks</h2>
                         <h3 className={"font-bold text-2xl"}>November 17-19, 2024</h3>
                         <a href={"google.com"} className={""}>
@@ -24,12 +24,12 @@ function App() {
 
                 </div>
 
-                <div id={"autoScrollContainer"} className={"h-24 w-full overflow-hidden border-y-4 border-black flex"}>
+                <div id={"autoScrollContainer"} className={"h-24 w-full overflow-hidden border-y-4 border-black flex bg-white"}>
                     <div id={"autoScrollText"} className={"my-auto"}>
                         {/*https://blog.hubspot.com/website/scrolling-text-css*/}
                         {/*Make text wrap better*/}
                         <p className={"text-nowrap text-7xl font-bold tracking-tighter"}>Alice Hack! Alice Hack! Alice
-                            Hack! Alice Hack!</p>
+                            Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack!</p>
                     </div>
                 </div>
             </section>
@@ -59,7 +59,7 @@ function App() {
                 </div>
             </section>
 
-            <section id={"sponsorStats"} className={"h-screen flex"}>
+            <section id={"sponsorStats"} className={"h-screen flex border-y-4 border-black bg-misty_rose"}>
                 <div className={"relative w-full h-full"}>
                     {/*centers because of negative margins*/}
                     <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto"} alt={""} src={"/schools.png"}/>
@@ -69,7 +69,7 @@ function App() {
                 </div>
             </section>
 
-            <section id={"sponsorEvent"} className={"h-screen flex bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"}>
+            <section id={"sponsorEvent"} className={"h-screen flex"}>
                 <div
                     className={"gap-y-2 m-auto w-11/12 px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center"}>
                     {/*<h1 className={"text-4xl font-black"}>Sponsor an Event of ${`{}`}</h1>*/}
