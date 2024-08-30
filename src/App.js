@@ -126,10 +126,11 @@ function App() {
 
                         </div>
                         <div className={"grid grid-cols-2 gap-4 place-items-center"}>
+
                             <div
-                                className={"justify-center items-center"}>
+                                className={"flex justify-center items-center"}>
                                 <a href={"https://www.bestbuy.com"}
-                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] block hover:shadow-none grid rounded-md"}>
                                     <img
                                         src="/logos/GAR.png" alt={""}
                                         className={"max-h-[60%] max-w-[60%] m-auto"}/>
