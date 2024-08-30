@@ -66,7 +66,7 @@ function App() {
                     <img className={"absolute w-6/12 left-4 top-40"} alt={""} src={"/schools.png"}/>
                     <img className={"absolute w-6/12 right-8 top-64"} alt={""} src={"/schools.png"}/>
                      {/*Change this to the 2 cheering bunny*/}
-                    <img className={"absolute w-8/12 top-2/4 right-0"} alt={""} src={"/bunny.png"}/>
+                    <img className={"absolute w-8/12 top-2/4 mx-auto left-0 right-0"} alt={""} src={"/bunny_cheer.png"}/>
                 </div>
             </section>
 
@@ -172,7 +172,21 @@ function App() {
                 </div>
             </section>
 
-            <section id={"footer"} className={"h-64 border-t-black border-t-4 bg-white"}>
+            <section id={"footer"} className={"h-64 border-t-black border-t-4 bg-white flex"}>
+                <div className={"flex flex-col gap-y-3 m-auto"}>
+                    <h2>
+                        Made with ❤️ in
+                        <br/>
+                        Toronto, Ontario, Canada 🇨🇦
+                    </h2>
+                    <div className={"flex flex-row gap-x-2 m-auto w-4/6 items-center justify-center h-12"}>
+                        <img src={"/icons/instagram.png"} className={"h-full"} alt={"instagram"}/>
+                        <img src={"/icons/linkedin.png"} className={"h-full"} alt={"instagram"}/>
+                        <img src={"/icons/tiktok.png"} className={"h-full"} alt={"instagram"}/>
+                        <img src={"/icons/mail.png"} className={"h-full"} alt={"instagram"}/>
+                    </div>
+                    <p>Copyright @ AliceHacks</p>
+                </div>
 
             </section>
 
