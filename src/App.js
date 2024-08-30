@@ -4,7 +4,7 @@ import Typing from "./components/Typing"
 function App() {
     return (
         <div className="App bg-lavender_blush font-satoshi overflow-x-hidden">
-            <section id={"home"}>
+            <section id={"home"} className={"h-lvh"}>
                 <div className={"h-lvh flex"}>
                     <div className={"m-auto flex flex-col gap-y-3"}>
                         <h1 className={"font-black text-8xl text-misty_rose_2"}>Alice</h1>
@@ -65,11 +65,12 @@ function App() {
                     <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto"} alt={""} src={"/schools.png"}/>
                     <img className={"absolute w-6/12 left-4 top-40"} alt={""} src={"/schools.png"}/>
                     <img className={"absolute w-6/12 right-8 top-64"} alt={""} src={"/schools.png"}/>
+                     {/*Change this to the 2 cheering bunny*/}
                     <img className={"absolute w-8/12 top-2/4 right-0"} alt={""} src={"/bunny.png"}/>
                 </div>
             </section>
 
-            <section id={"sponsorEvent"} className={"h-screen flex"}>
+            <section id={"sponsorEvent"} className={"h-[32rem] flex"}>
                 <div
                     className={"gap-y-2 m-auto w-11/12 px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center"}>
                     {/*<h1 className={"text-4xl font-black"}>Sponsor an Event of ${`{}`}</h1>*/}
@@ -97,10 +98,10 @@ function App() {
                         <div className={"flex flex-col"}>
                             <div
                                 className={"h-[10rem] mb-4 px-12 py-4 bg-white border-2 border-black transition-all hover:shadow-none hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid place-content-center"}>
-                                <a href={"https://www.bestbuy.com"} className={"h-full w-full flex"}>
+                                <a href={"https://www.bestbuy.com"} className={"h-full flex"}>
                                     <img
                                         src="/logos/BEST_BUY.png" alt={""}
-                                        className={"object-scale-down mx-auto"}/>
+                                        className={"object-scale-down h-full"}/>
                                 </a>
                             </div>
 
