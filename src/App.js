@@ -1,12 +1,15 @@
 import './App.css';
 import Typing from "./components/Typing"
+import "animate.css"
+
+// https://dbramwell.github.io/react-animate-on-scroll/#install
 
 function App() {
     return (
         <div className="App bg-lavender_blush font-satoshi overflow-x-hidden">
             <section id={"home"} className={"h-lvh"}>
-                <div className={"h-lvh flex"}>
-                    <div className={"m-auto flex flex-col gap-y-3"}>
+                <div className={"h-lvh flex lg:px-32 lg:text-left lg:flex-row"}>
+                    <div className={"m-auto flex flex-col gap-y-3 lg:ml-0 lg:w-1/2"}>
                         <h1 className={"font-black text-8xl text-misty_rose_2"}>Alice</h1>
                         <h2 className={"font-black text-8xl"}>Hacks</h2>
                         <h3 className={"font-bold text-2xl"}>November 17-19, 2024</h3>
@@ -17,7 +20,9 @@ function App() {
                             </button>
                         </a>
                     </div>
+
                     <div>
+
                     </div>
                 </div>
 
@@ -47,14 +52,14 @@ function App() {
                 <div className={"m-auto"}>
                     <div className={"m-auto flex flex-col w-4/5 md:w-3/5"}>
                         <div
-                            className={"z-10 -mx-4 -mb-2 w-3/5 p-3 bg-cornflower_blue border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] slow-shift"}>
+                            className={"z-10 -mx-4 -mb-2 w-3/5 p-3 border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] slow-shift"}>
                             <div className={""}>
-                                <h3>ABOUT US</h3>
+                                <h3 className={"text-3xl font-bold"}>ABOUT US</h3>
                             </div>
                         </div>
 
                         <div
-                            className="z-0 w-full px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center">
+                            className="z-0 w-full px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center md:p-8">
                             <div>
                                 <h1 className="text-xl mb-4">AliceHacks is a hackathon run by high school students that
                                     draws inspiration from the
@@ -71,9 +76,12 @@ function App() {
 
             <section id={"sponsorStats"} className={"h-[42rem] flex border-y-4 border-black md:h-screen"}>
                 <div className={"relative w-full h-full"}>
-                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-[19rem]"} alt={""} src={"/schools.png"}/>
-                    <img className={"absolute w-6/12 left-4 top-40 md:w-3/12 md:left-24 md:top-52"} alt={""} src={"/schools.png"}/>
-                    <img className={"absolute w-6/12 right-8 top-64 md:w-3/12 md:right-16"} alt={""} src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-[19rem] animate__animated animate__slideInLeft"} animateIn={} alt={""}
+                         src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 left-4 top-40 md:w-3/12 md:left-24 md:top-52 animate__animated animate__slideInLeft"} alt={""}
+                         src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 right-8 top-64 md:w-3/12 md:right-16 animate__animated animate__slideInRight"} alt={""}
+                         src={"/schools.png"}/>
                     <img className={"absolute w-8/12 bottom-16 mx-auto left-0 right-0 md:w-5/12"} alt={""}
                          src={"/bunny_cheer.png"}/>
                 </div>

@@ -143,10 +143,10 @@ code {
 }
 
 .slow-shift {
-    animation: bounce 3s ease-in-out infinite;
+    animation: slowShift 3s ease-in-out infinite;
 }
 
-@keyframes bounce {
+@keyframes slowShift {
   0%, 100% {
     transform: translateY(-4px);
     animation-timing-function: ease-in-out;
