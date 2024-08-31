@@ -71,9 +71,9 @@ function App() {
 
             <section id={"sponsorStats"} className={"h-[42rem] flex border-y-4 border-black md:h-screen"}>
                 <div className={"relative w-full h-full"}>
-                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-3/12"} alt={""} src={"/schools.png"}/>
-                    <img className={"absolute w-6/12 left-4 top-40 md:w-3/12"} alt={""} src={"/schools.png"}/>
-                    <img className={"absolute w-6/12 right-8 top-64 md:w-3/12"} alt={""} src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-[19rem]"} alt={""} src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 left-4 top-40 md:w-3/12 md:left-24 md:top-52"} alt={""} src={"/schools.png"}/>
+                    <img className={"absolute w-6/12 right-8 top-64 md:w-3/12 md:right-16"} alt={""} src={"/schools.png"}/>
                     <img className={"absolute w-8/12 bottom-16 mx-auto left-0 right-0 md:w-5/12"} alt={""}
                          src={"/bunny_cheer.png"}/>
                 </div>
@@ -167,11 +167,12 @@ function App() {
 
                 <div className={"w-11/12 md:w-3/5 m-auto"}>
                     <div
-                        className={"h-[10rem] mb-4 px-12 py-4 bg-white border-2 border-black transition-all hover:shadow-none hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid place-content-center"}>
-                        <a href={"https://www.bestbuy.com"} className={"h-full flex"}>
+                        className={"mb-4 flex justify-center items-center"}>
+                        <a href={"https://www.bestbuy.com"}
+                           className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
                             <img
                                 src="/logos/BEST_BUY.png" alt={""}
-                                className={"object-scale-down h-full"}/>
+                                className={"max-h-[60%] max-w-[60%]"}/>
                         </a>
                     </div>
                 </div>
