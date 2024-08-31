@@ -1,5 +1,6 @@
 import './App.css';
 import Typing from "./components/Typing"
+import Deck from "./components/Cards"
 import "animate.css"
 
 // https://dbramwell.github.io/react-animate-on-scroll/#install
@@ -21,7 +22,8 @@ function App() {
                         </a>
                     </div>
 
-                    <div>
+                    <div id={"cards"}>
+                        <Deck/>
 
                     </div>
                 </div>
@@ -76,7 +78,7 @@ function App() {
 
             <section id={"sponsorStats"} className={"h-[42rem] flex border-y-4 border-black md:h-screen"}>
                 <div className={"relative w-full h-full"}>
-                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-[19rem] animate__animated animate__slideInLeft"} animateIn={} alt={""}
+                    <img className={"absolute w-6/12 left-0 right-0 top-11 mx-auto md:w-[19rem] animate__animated animate__slideInLeft"} alt={""}
                          src={"/schools.png"}/>
                     <img className={"absolute w-6/12 left-4 top-40 md:w-3/12 md:left-24 md:top-52 animate__animated animate__slideInLeft"} alt={""}
                          src={"/schools.png"}/>
