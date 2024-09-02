@@ -8,16 +8,16 @@ import "animate.css"
 function App() {
     return (
         <div className="App bg-cornflower_blue font-satoshi overflow-x-hidden">
-            <section id={"home"} className={"h-lvh"}>
-                <img className={"absolute top-[20%] left-[10%]"} alt={"hearts"} src={"hearts.png"}/>
-                <img className={"absolute top-[17%] right-[10%]"} alt={"card"} src={"acehearts.png"}/>
-                <img className={"absolute top-[70%] left-[7%]"} alt={"clubs"} src={"clubs.png"}/>
-                <img className={"absolute top-[75%] right-[7%]"} alt={"diamonds"} src={"diamonds.png"}/>
-                <div className={"h-lvh flex lg:px-64 lg:text-left lg:flex-row"}>
+            <section id={"home"} className={"h-screen"}>
+                <img className={"absolute top-[20%] left-[10%] lg:hidden"} alt={"hearts"} src={"hearts.png"}/>
+                <img className={"absolute top-[17%] right-[10%] lg:hidden"} alt={"card"} src={"acehearts.png"}/>
+                <img className={"absolute top-[70%] left-[7%] lg:hidden"} alt={"clubs"} src={"clubs.png"}/>
+                <img className={"absolute top-[75%] right-[7%] lg:hidden"} alt={"diamonds"} src={"diamonds.png"}/>
+                <div className={"h-lvh flex lg:px-44 lg:text-left lg:flex-row xl:px-96"}>
                     <div className={"m-auto flex flex-col gap-y-3 lg:ml-0 lg:w-1/2"}>
-                        <h1 className={"font-black text-8xl text-misty_rose_2"}>Alice</h1>
-                        <h2 className={"font-black text-8xl"}>Hacks</h2>
-                        <h3 className={"font-bold text-2xl"}>November 17-19, 2024</h3>
+                        <h1 className={"font-black text-8xl text-misty_rose_2 xl:text-9xl"}>Alice</h1>
+                        <h2 className={"font-black text-8xl xl:text-9xl"}>Hacks</h2>
+                        <h3 className={"font-bold text-2xl  xl:text-3xl"}>November 17-19, 2024</h3>
                         <a href={"google.com"} className={""}>
                             <button
                                 className="h-14 border-black text-xl font-bold border-2 p-2.5 bg-beige transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-none active:bg-[#00E1EF] rounded-md">
@@ -26,7 +26,7 @@ function App() {
                         </a>
                     </div>
 
-                    <div id={"cards"} className={"hidden md:w-1/2"}>
+                    <div id={"cards"} className={"hidden lg:w-1/2 lg:block"}>
                         <Deck/>
                     </div>
                 </div>
@@ -42,9 +42,9 @@ function App() {
                 </div>
             </div>
 
-            <section id={"aboutUs"} className={"h-screen flex bg-gradient_blue"}>
+            <section id={"aboutUs"} className={"h-screen flex bg-gradient_blue md:h-[50rem]"}>
                 <div className={"m-auto"}>
-                    <div className={"m-auto flex flex-col w-4/5 md:w-3/5"}>
+                    <div className={"m-auto flex flex-col w-4/5 md:w-3/5 lg:w-4/6 xl:w-1/2"}>
                         <div
                             className={"bg-misty_rose z-10 -mx-4 -mb-2 w-3/5 p-3 border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] slow-shift"}>
                             <div className={""}>
@@ -53,9 +53,9 @@ function App() {
                         </div>
 
                         <div
-                            className="z-0 w-full px-8 py-4 bg-lavender_blush border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center md:p-8">
-                            <div>
-                                <h1 className="text-xl mb-4">AliceHacks is a hackathon run by high school students that
+                            className="z-0 w-full px-8 py-4 bg-lavender_blush border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] place-content-center md:p-8 flex flex-row">
+                            <div className={"w-1/2 m-auto"}>
+                                <h1 className="text-xl font-medium mb-4 text-left">AliceHacks is a hackathon run by high school students that
                                     draws inspiration from the
                                     classic tale of Alice in Wonderland! Participants are encouraged to let their
                                     creativity, imagination, and silliness run wild rather than worrying too much about
@@ -63,12 +63,15 @@ function App() {
                                     technicality. We want to provide a platform for veterans and beginners to go hand in
                                     hand with each other without their technical skill differences!</h1>
                             </div>
+                            <div className={""}>
+                                <img className={"w-4/5 m-auto"} alt={"bunny"} src={"singlebunny.png"}/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id={"sponsorStats"} className={"h-[46rem] flex flex-col border-t-4 border-black md:h-screen"}>
+            <section id={"sponsorStats"} className={"h-[46rem] flex flex-col border-t-4 border-black md:h-[50rem] lg:h-[56rem] xl:h-[70rem] xl:px-60"}>
                 <div>
                     <h3 className={"text-3xl font-black pt-12 pb-6"}>Our Impact</h3>
                 </div>
@@ -269,17 +272,17 @@ function App() {
             </section>
 
             <section id={"footer"} className={"h-64 border-t-black border-t-4 bg-white flex"}>
-                <div className={"flex flex-col gap-y-3 m-auto text-lg font-medium"}>
+                <div className={"flex flex-col m-auto text-lg font-medium"}>
                     <h2 className={""}>
                         Made with ❤️ in
                         <br/>
                         Toronto, Ontario, Canada 🇨🇦
                     </h2>
                     <div className={"flex flex-row gap-x-2 m-auto w-4/6 items-center justify-center h-12"}>
-                        <img src={"/icons/instagram.png"} className={"h-full"} alt={"instagram"}/>
-                        <img src={"/icons/linkedin.png"} className={"h-full"} alt={"instagram"}/>
-                        <img src={"/icons/tiktok.png"} className={"h-full"} alt={"instagram"}/>
-                        <img src={"/icons/mail.png"} className={"h-full"} alt={"instagram"}/>
+                        <img src={"/icons/instagram.png"} className={"h-1/2"} alt={"instagram"}/>
+                        <img src={"/icons/linkedin.png"} className={"h-1/2"} alt={"instagram"}/>
+                        <img src={"/icons/tiktok.png"} className={"h-1/2"} alt={"instagram"}/>
+                        <img src={"/icons/mail.png"} className={"h-1/2"} alt={"instagram"}/>
                     </div>
                     <p>Copyright @ AliceHacks</p>
                 </div>

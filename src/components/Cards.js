@@ -62,11 +62,11 @@ function Deck() {
         <>
             {props.map(({x, y, rot, scale}, i) => (
                 <animated.div
-                    className={"absolute w-[300px] h-[200px] will-change-transform flex items-center justify-center touch-none"}
+                    className={"absolute will-change-transform flex items-center justify-center touch-none"}
                     key={i} style={{x, y}}>
                     {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
                     <animated.div
-                        className={"border-black border-[2px] bg-white bg-[length:auto_85%] bg-no-repeat bg-center w-[45vh] max-w-[150px] h-[85vh] max-h-[285px] will-change-transform rounded-lg shadow-[0_12.5px_100px_-10px_rgba(50,50,73,0.4),0_10px_10px_-10px_rgba(50,50,73,0.3)]"}
+                        className={"border-black border-[2px] bg-white bg-[length:auto_85%] bg-no-repeat bg-center w-[45vh] max-w-[200px] h-[85vh] max-h-[380px] will-change-transform rounded-lg shadow-[0_12.5px_100px_-10px_rgba(50,50,73,0.4),0_10px_10px_-10px_rgba(50,50,73,0.3)]"}
                         {...bind(i)}
                         style={{
                             transform: interpolate([rot, scale], trans),
@@ -82,7 +82,7 @@ function Deck() {
 
 export default function App() {
     return (
-        <div className={"cursor-all-scroll flex items-center h-full justify-center"}>
+        <div className={"flex items-center h-full w-full justify-center relative"}>
             <Deck/>
         </div>
     )
