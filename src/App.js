@@ -7,9 +7,9 @@ import "animate.css"
 
 function App() {
     return (
-        <div className="App bg-lavender_blush font-satoshi overflow-x-hidden">
+        <div className="App bg-cornflower_blue font-satoshi overflow-x-hidden">
             <section id={"home"} className={"h-lvh"}>
-                <div className={"h-lvh flex lg:px-32 lg:text-left lg:flex-row"}>
+                <div className={"h-lvh flex lg:px-64 lg:text-left lg:flex-row"}>
                     <div className={"m-auto flex flex-col gap-y-3 lg:ml-0 lg:w-1/2"}>
                         <h1 className={"font-black text-8xl text-misty_rose_2"}>Alice</h1>
                         <h2 className={"font-black text-8xl"}>Hacks</h2>
@@ -22,22 +22,10 @@ function App() {
                         </a>
                     </div>
 
-                    <div id={"cards"}>
+                    <div id={"cards"} className={"w-1/2"}>
                         <Deck/>
-
                     </div>
                 </div>
-
-                {/*<div id={"autoScrollContainer"}*/}
-                {/*     className={"h-24 w-full overflow-hidden border-y-4 border-black flex bg-white"}>*/}
-                {/*    <div id={"autoScrollText"} className={"my-auto"}>*/}
-                {/*        /!*https://blog.hubspot.com/website/scrolling-text-css*!/*/}
-                {/*        /!*Make text wrap better*!/*/}
-                {/*        <p className={"text-nowrap text-7xl font-bold tracking-tighter"}>Alice Hack! Alice Hack! Alice*/}
-                {/*            Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice Hack! Alice*/}
-                {/*            Hack!</p>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
             </section>
 
             <div id={"autoScrollContainer"}
@@ -118,18 +106,18 @@ function App() {
                             <div
                                 className={"mb-4 flex justify-center items-center"}>
                                 <a href={"https://www.bestbuy.com"}
-                                   className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
+                                   className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-back_grey shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
                                     <img
-                                        src="/logos/BEST_BUY.png" alt={""}
+                                        src="/sponsors/onlyoffice.png" alt={""}
                                         className={"max-h-[60%] max-w-[60%]"}/>
                                 </a>
                             </div>
                             <div
                                 className={"mb-4 flex justify-center items-center"}>
                                 <a href={"https://www.bestbuy.com"}
-                                   className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
+                                   className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-white shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
                                     <img
-                                        src="/logos/GAR.png" alt={""}
+                                        src="/sponsors/cryptochicks.png" alt={""}
                                         className={"max-h-[60%] max-w-[60%]"}/>
                                 </a>
                             </div>
@@ -143,17 +131,7 @@ function App() {
                                 <a href={"https://www.bestbuy.com"}
                                    className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)]  hover:shadow-none grid rounded-md"}>
                                     <img
-                                        src="/logos/GAR.png" alt={""}
-                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
-                                </a>
-                            </div>
-
-                            <div
-                                className={"justify-center items-center"}>
-                                <a href={"https://www.bestbuy.com"}
-                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
-                                    <img
-                                        src="/logos/GAR.png" alt={""}
+                                        src="/sponsors/xanadu.png" alt={""}
                                         className={"max-h-[60%] max-w-[60%] m-auto"}/>
                                 </a>
                             </div>
@@ -162,7 +140,88 @@ function App() {
                                 <a href={"https://www.bestbuy.com"}
                                    className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
                                     <img
-                                        src="/logos/GAR.png" alt={""}
+                                        src="/sponsors/aops.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/wolfram.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/echo3d.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/jdoodle.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/ieuniversity.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/algoverse.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/standoutstickers.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/octopus.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/balsamiq.png" alt={""}
+                                        className={"max-h-[60%] max-w-[60%] m-auto"}/>
+                                </a>
+                            </div>
+                            <div
+                                className={"justify-center items-center"}>
+                                <a href={"https://www.bestbuy.com"}
+                                   className={" justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] grid hover:shadow-none rounded-md"}>
+                                    <img
+                                        src="/sponsors/xyz.png" alt={""}
                                         className={"max-h-[60%] max-w-[60%] m-auto"}/>
                                 </a>
                             </div>
@@ -180,8 +239,8 @@ function App() {
                         className={"mb-4 flex justify-center items-center"}>
                         <a href={"https://www.bestbuy.com"}
                            className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
-                            <img
-                                src="/logos/BEST_BUY.png" alt={""}
+                        <img
+                                src="/sponsors/hackclub.svg" alt={""}
                                 className={"max-h-[60%] max-w-[60%]"}/>
                         </a>
                     </div>
