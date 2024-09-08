@@ -54,7 +54,7 @@ function App() {
 
                         <div
                             className="z-0 w-full px-8 py-4 bg-lavender_blush border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] place-content-center md:p-8 flex flex-row">
-                            <div className={"w-1/2 m-auto"}>
+                            <div className={"lg:w-1/2 m-auto"}>
                                 <h1 className="text-xl font-medium mb-4 text-left">AliceHacks is a hackathon run by high school students that
                                     draws inspiration from the
                                     classic tale of Alice in Wonderland! Participants are encouraged to let their
@@ -63,7 +63,7 @@ function App() {
                                     technicality. We want to provide a platform for veterans and beginners to go hand in
                                     hand with each other without their technical skill differences!</h1>
                             </div>
-                            <div className={""}>
+                            <div className={"hidden lg:block"}>
                                 <img className={"w-4/5 m-auto"} alt={"bunny"} src={"singlebunny.png"}/>
                             </div>
                         </div>
