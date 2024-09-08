@@ -2,12 +2,90 @@ import './App.css';
 import Typing from "./components/Typing"
 import Deck from "./components/Cards"
 import "animate.css"
+// import Nav from "./components/Navbar"
+
+// Change card images
+// Add navbar
+// Consistent buttons
+// Better infinite scroll
+// Sponsor package
 
 // https://dbramwell.github.io/react-animate-on-scroll/#install
 
 function App() {
     return (
         <div className="App bg-cornflower_blue font-satoshi overflow-x-hidden">
+
+            {/*<nav className="container mx-auto px-6 py-3">*/}
+            {/*    <div className="flex justify-between items-center">*/}
+            {/*        <a href="#" className="text-2xl font-bold text-gray-800"><img src={"/logo.png"} alt={"logo"}/></a>*/}
+            {/*        <div className="hidden md:flex items-center space-x-4 text-sky-950 text-lg font-semibold">*/}
+            {/*            <a href="#faq-accordion" className=" hover:text-blue-600">FAQ</a>*/}
+            {/*            <a href="#sponsors" className=" hover:text-blue-600">Sponsors</a>*/}
+            {/*            <a href="#ourTeam" className="hover:text-blue-600">Our Team</a>*/}
+            {/*            /!*<a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-md">Sign Up</a>*!/*/}
+            {/*        </div>*/}
+            {/*        <div className="md:hidden flex items-center">*/}
+            {/*            <button*/}
+            {/*                className="text-gray-800 focus:outline-none">*/}
+            {/*                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"*/}
+            {/*                     xmlns="http://www.w3.org/2000/svg">*/}
+            {/*                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"*/}
+            {/*                          d="M4 6h16M4 12h16M4 18h16"></path>*/}
+            {/*                </svg>*/}
+            {/*            </button>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</nav>*/}
+
+            {/*<nav className="bg-sky-600 text-white">*/}
+            {/*    <div className="container mx-auto px-4 md:flex items-center gap-6">*/}
+            {/*        <!-- Logo -->*/}
+            {/*        <div className="flex items-center justify-between md:w-auto w-full">*/}
+            {/*            <a href="#" className="py-5 px-2 text-white flex-1 font-bold">Webcrunch.com</a>*/}
+
+            {/*            <!-- mobile menu icon -->*/}
+            {/*            <div className="md:hidden flex items-center">*/}
+            {/*                <button type="button" className="mobile-menu-button">*/}
+            {/*                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"*/}
+            {/*                         stroke-width="1.5" stroke="currentColor" className="w-6 h-6">*/}
+            {/*                        <path stroke-linecap="round" stroke-linejoin="round"*/}
+            {/*                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/>*/}
+            {/*                    </svg>*/}
+            {/*                </button>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+
+            {/*        <div*/}
+            {/*            className="hidden md:flex md:flex-row flex-col items-center justify-start md:space-x-1 pb-3 md:pb-0 navigation-menu">*/}
+            {/*            <a href="#" className="py-2 px-3 block">Home</a>*/}
+            {/*            <a href="#" className="py-2 px-3 block">About</a>*/}
+            {/*            <!-- Dropdown menu -->*/}
+            {/*            <div className="relative">*/}
+            {/*                <button type="button"*/}
+            {/*                        className="dropdown-toggle py-2 px-3 hover:bg-sky-800 flex items-center gap-2 rounded">*/}
+            {/*                    <span className="pointer-events-none select-none">Services</span>*/}
+            {/*                    <svg className="w-3 h-3 pointer-events-none" xmlns="http://www.w3.org/2000/svg"*/}
+            {/*                         fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"*/}
+            {/*                         className="w-6 h-6">*/}
+            {/*                        <path stroke-linecap="round" stroke-linejoin="round"*/}
+            {/*                              d="m19.5 8.25-7.5 7.5-7.5-7.5"/>*/}
+            {/*                    </svg>*/}
+            {/*                </button>*/}
+            {/*                <div className="dropdown-menu absolute hidden bg-sky-700 text-white rounded-b-lg pb-2 w-48">*/}
+            {/*                    <a href="#" className="block px-6 py-2 hover:bg-sky-800">Web Design</a>*/}
+            {/*                    <a href="#" className="block px-6 py-2 hover:bg-sky-800">Web Development</a>*/}
+            {/*                    <a href="#" className="block px-6 py-2 hover:bg-sky-800">SEO</a>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*            <a href="#" className="py-2 px-3 block">Contact</a>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</nav>*/}
+
+            {/*<Nav/>*/}
+
+
             <section id={"home"} className={"h-screen"}>
                 <img className={"absolute top-[20%] left-[10%] lg:hidden"} alt={"hearts"} src={"hearts.png"}/>
                 <img className={"absolute top-[17%] right-[10%] lg:hidden"} alt={"card"} src={"acehearts.png"}/>
@@ -55,7 +133,8 @@ function App() {
                         <div
                             className="z-0 w-full px-8 py-4 bg-lavender_blush border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] place-content-center md:p-8 flex flex-row">
                             <div className={"lg:w-1/2 m-auto"}>
-                                <h1 className="text-xl font-medium mb-4 text-left">AliceHacks is a hackathon run by high school students that
+                                <h1 className="text-xl font-medium mb-4 text-left">AliceHacks is a hackathon run by high
+                                    school students that
                                     draws inspiration from the
                                     classic tale of Alice in Wonderland! Participants are encouraged to let their
                                     creativity, imagination, and silliness run wild rather than worrying too much about
@@ -71,7 +150,8 @@ function App() {
                 </div>
             </section>
 
-            <section id={"sponsorStats"} className={"h-[46rem] flex flex-col border-t-4 border-black md:h-[50rem] lg:h-[56rem] xl:h-[70rem] xl:px-60"}>
+            <section id={"sponsorStats"}
+                     className={"h-[46rem] flex flex-col border-t-4 border-black md:h-[50rem] lg:h-[56rem] xl:h-[70rem] xl:px-60"}>
                 <div>
                     <h3 className={"text-3xl font-black pt-12 pb-6"}>Our Impact</h3>
                 </div>
@@ -108,7 +188,8 @@ function App() {
                     <h1 className={"text-4xl font-black"}>Sponsor an Event of <h1 className={"text-gradient_blue"}>
                         <Typing/></h1></h1>
 
-                    <p className={"text-xl font-medium"}>At the heart of our event are sponsors who make it possible. Want to help support the next
+                    <p className={"text-xl font-medium"}>At the heart of our event are sponsors who make it possible.
+                        Want to help support the next
                         generation of talents? </p>
 
                     <a href={"google.com"} className={"p-2"}>
@@ -263,7 +344,7 @@ function App() {
                         className={"mb-4 flex justify-center items-center"}>
                         <a href={"https://www.bestbuy.com"}
                            className={"flex justify-center items-center w-full h-[20vw] bg-white border-2 border-black transition-all hover:translate-y-0.5 hover:bg-rosy_brown shadow-[6px_6px_0px_rgba(0,0,0,1)] hover:shadow-none rounded-md"}>
-                        <img
+                            <img
                                 src="/sponsors/hackclub.svg" alt={""}
                                 className={"max-h-[60%] max-w-[60%]"}/>
                         </a>
